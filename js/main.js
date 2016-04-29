@@ -62,9 +62,9 @@ $(document).ready(function() {
    
    //get the highscore
    var savedscore = getCookie("highscore");
-   if(savedscore != "")
+   if(savedscore != "") {
       highscore = parseInt(savedscore);
-   
+   }
    //start with the splash screen
    showSplash();
 });

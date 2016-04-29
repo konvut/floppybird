@@ -38,10 +38,25 @@
       <link href="css/main.css" rel="stylesheet">
    </head>
    <body>
+
       <div id="gamecontainer">
          <div id="gamescreen">
             <div id="sky" class="animated">
-               <div id="flyarea">
+               <div id="header">
+                  <div id="title">Ууупс! Что-то сломалось!</div>
+                  <div class="wrapper">
+                     Попробуйте обновить страничку.<br/>
+                     Если ошибка повторится, воспользуйтесь поддержкой support@k50.ru внизу экрана.
+                  </div>
+                  <input type="button" class="btn btn-warning btn-sm" onclick="document.location.reload()" value="Обновить"/>
+                  <div id="body">
+                     А пока, побейте наш рекорд - 50
+                  </div>
+                  <div id="comment">
+                     (для управления используйте пробел)
+                  </div>
+               </div>
+              <div id="flyarea">
                   <div id="ceiling" class="animated"></div>
                   <!-- This is the flying and pipe area container -->
                   <div id="player" class="bird animated"></div>
@@ -64,9 +79,7 @@
          </div>
       </div>
       <div id="footer">
-         <a href="http://www.dotgears.com/">original game/concept/art by dong nguyen</a>
-         <a href="http://nebezb.com/">recreated by nebez briefkani</a>
-         <a href="http://github.com/nebez/floppybird/">view github project</a>
+
       </div>
       <div class="boundingbox" id="playerbox"></div>
       <div class="boundingbox" id="pipebox"></div>
